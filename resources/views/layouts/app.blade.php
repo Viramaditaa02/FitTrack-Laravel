@@ -55,24 +55,14 @@
           </li>
           <hr class="sidebar-divider my-0">
             <li class="nav-item">
-            <a class="nav-link" href="">
+            <a class="nav-link" href="{{ route('Jenis') }}">
               <i class="ti-user menu-icon"></i>
               <span class="menu-title">Jenis Olahraga</span>
             </a>
           </li>
           
-            
-
-            <!-- Nav Item - Pages Collapse Menu -->
-            
-
-           
-
-            
-
-            
-
-            <!-- Divider -->
+        <!-- Nav Item - Pages Collapse Menu -->
+        <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
             <!-- Sidebar Toggler (Sidebar) -->
@@ -103,20 +93,12 @@
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                         <i class="fa fa-bars"></i>
                     </button>
-
-                    
-
+                 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
 
                         <!-- Nav Item - Search Dropdown (Visible Only XS) -->
-                       
-                          
-                        
-                            
-
-                                   
-
+                      
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
@@ -147,11 +129,8 @@
           </section>
       </div>
   </main><!-- End #main -->
-                    
-
-
-            
-            <!-- End of Footer -->
+  
+      <!-- End of Footer -->
 
         </div>
         <!-- End of Content Wrapper -->

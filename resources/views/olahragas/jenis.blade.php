@@ -1,14 +1,14 @@
 @extends('layouts.app') @section('content')
 
 <div class="pagetitle">
-    <h1>Data Jadwal</h1>
+    <h1>Data Jenis Olahraga</h1>
 </div><!-- End Page Title -->
 <div class="container-fluid">
     <div class="card">
       <div class="card-header">
         <div class="buttons">
-        <a href="{{ route('addJadwal') }}" class="btn btn-primary"><i class="fas fa-plus"></i> Tambah Data</a>
-        <a href="{{ route('pdfJadwal') }}" target="_blank" class="btn btn-danger"><i class="fas fa-print"></i> Cetak PDF</a>
+        <a href="{{ route('addJenis') }}" class="btn btn-primary"><i class="fas fa-plus"></i> Tambah Jenis Olahraga</a>
+        <a href="{{ route('pdfJenis') }}" target="_blank" class="btn btn-danger"><i class="fas fa-print"></i> Cetak PDF</a>
       </div>
     </div>
     <div class="row">
@@ -18,11 +18,8 @@
                         <thead>
                             <tr>
                                 <th>No</th>
-                                <th>Nama</th>
                                 <th>Jenis Olahraga</th>
-                                <th>Harga Latihan</th>
-                                <th>Tanggal Mulai</th>
-                                <th>Tanggal Selesai</th>
+                                <th>Harga</th>
                                 <th>Action</th>
                                 
                             </tr>
@@ -32,16 +29,12 @@
                             @foreach ($data as $item=>$row)
                             <tr>
                                     <td style="text-align: center;">{{ $item+1 }}</td>
-                                    <td>{{ $row->nama}}</td>
                                     <td>{{ $row->jenis_olahraga}}</td>
-                                    <td>{{ $row->harga_latihan}}</td>
-                                    <td>{{ $row->tanggal_mulai}}</td>
-                                    <td>{{ $row->tanggal_selesai}}</td>
-                                    
+                                    <td>{{ $row->harga}}</td>                                  
                                     
                                     <td>
-                                        <a href="{{ route('readJadwal', $row->id) }}" class="btn icon btn-success"><i>Edit</i></a>
-                                        <a href="{{ route('deleteJadwal', $row->id) }}" class="btn icon btn-danger"><i>Hapus</i></i></a>
+                                        <a href="{{ route('readJenis', $row->id) }}" class="btn icon btn-success"><i>Edit</i></a>
+                                        <a href="{{ route('deleteJenis', $row->id) }}" class="btn icon btn-danger"><i>Hapus</i></i></a>
                                     </td>
                             </tr>
                             @endforeach
